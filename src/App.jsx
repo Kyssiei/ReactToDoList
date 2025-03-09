@@ -12,6 +12,7 @@ function App() {
      <Header />
      <CheckBox />
      <InputField />
+     <Button name="Add" />
   
     </>
   )

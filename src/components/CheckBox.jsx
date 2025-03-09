@@ -2,6 +2,7 @@
 
 
 function CheckBox () {
+    const [checked, setChecked] = useState()
     
     return(
         <>
