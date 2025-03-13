@@ -1,19 +1,13 @@
-import { useState } from 'react'
-import Header from "./components/Header";
-import CheckBox from './components/CheckBox';
-import InputField from './components/InputField';
-import Button from './components/Button';
+import Header from './components/Header'
+import Main from './components/Main'
 import './App.css'
 
 function App() {
 
   return (
     <>
-     <Header />
-     <CheckBox />
-     <InputField />
-     <Button name="Add" />
-  
+      <Header />
+      <Main />
     </>
   )
 }

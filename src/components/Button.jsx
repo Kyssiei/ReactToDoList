@@ -1,12 +1,12 @@
 
 
 
-function Button (props) {
+function Button ({ label, onClick, disabled }) {
     
 
     return(
         <>
-            <button>{props.name}</button>
+            <button onClick={onClick} disabled={disabled}>{label}</button>
         </>
     )
 

@@ -1,14 +1,19 @@
+import ToDoListItem from "./ToDoListItem";
 
 
-
-function TodoList () {
-    
-    return(
-        <>
-        
-        </>
-    )
-
+function ToDoList({ todos, dispatch }) {
+    return (
+        <div>
+            {todos.map((todo, index) => (
+                <ToDoListItem 
+                    key={index} 
+                    todo={todo} 
+                    index={index} 
+                    dispatch={dispatch} 
+                />
+            ))}
+        </div>
+    );
 }
 
-export default TodoList
+export default ToDoList;

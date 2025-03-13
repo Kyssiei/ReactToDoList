@@ -1,13 +1,13 @@
 
 
 
-function CheckBox () {
-    const [checked, setChecked] = useState()
+function CheckBox ({checked, onChange}) {
+    // const [checked, setChecked] = useState();
     
     return(
-        <>
-            <input type="checkbox" />
-        </>
+        <div>
+            <input type="checkbox" checked={checked} onchange={onChange} />
+        </div>
     )
 
 }
